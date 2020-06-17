@@ -13,9 +13,12 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "9.0" }
   s.source       = { :git => "https://github.com/simonso-nzme/react-native-nielsen-nzme.git", :tag => "#{s.version}" }
 
-  
+  s.library = "c++"
+
   s.source_files = "ios/**/*.{h,m,mm}"
   
+  s.frameworks = "UIKit", "Foundation", "AdSupport", "JavascriptCore", "WebKit", "SystemConfiguration", "Security", "AVFoundation"
 
   s.dependency "React"
+  s.dependency "NielsenAppSDK"
 end
