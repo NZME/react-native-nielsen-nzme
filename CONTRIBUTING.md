@@ -51,7 +51,7 @@ yarn test
 
 To edit the Objective-C files, open `example/ios/NielsenNzmeExample.xcworkspace` in XCode and find the source files at `Pods > Development Pods > react-native-nielsen-nzme`.
 
-To edit the Kotlin files, open `example/android` in Android studio and find the source files at `reactnativenielsennzme` under `Android`.
+To edit the Kotlin files, open `example/android` in Android studio and find the source files at `com.nzme.nielsen` under `Android`.
 
 ### Commit message convention
 
