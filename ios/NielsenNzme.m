@@ -15,6 +15,8 @@
 #import "NielsenNzme.h"
 #import <NielsenAppApi/NielsenAppApi.h>
 
+#define kCfgNmPlayerId @"nol_playerid"
+
 static NSString *const TAG = @"NielsenAppApiBridge";
 
 @interface NielsenNzme() <NielsenAppApiDelegate>
@@ -66,8 +68,7 @@ RCT_EXPORT_METHOD(createInstance:(NSDictionary *)appInfo)
     NSMutableDictionary *bridgedInfo = [NSMutableDictionary dictionaryWithDictionary:appInfo];
     NSString *sdk_id = [NSString stringWithFormat:@"%lli", (long long)([[NSDate date] timeIntervalSince1970] * 1000)];
 
-    // bridgedInfo[kCfgNmPlayerId] = sdk_id;
-    bridgedInfo[@"kCfgNmPlayerId"] = sdk_id;
+    bridgedInfo[kCfgNmPlayerId] = sdk_id;
     NielsenAppApi *nlsSDK = [[NielsenAppApi alloc] initWithAppInfo:bridgedInfo delegate:self];
     if (nlsSDK) {
       self.nlsSDKs[sdk_id] = nlsSDK;
