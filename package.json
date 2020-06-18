@@ -34,7 +34,10 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/simonso-nzme/react-native-nielsen-nzme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonso-nzme/react-native-nielsen-nzme.git"
+  },
   "author": "Simon So <simon.so@nzme.co.nz> (https://github.com/simonso-nzme)",
   "license": "MIT",
   "bugs": {
@@ -119,7 +122,10 @@
       ]
     }
   },
-  "eslintIgnore": ["node_modules/", "lib/"],
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,
@@ -130,6 +136,13 @@
   "@react-native-community/bob": {
     "source": "src",
     "output": "lib",
-    "targets": ["commonjs", "module", "typescript"]
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "directories": {
+    "example": "example"
   }
 }
