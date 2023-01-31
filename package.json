@@ -1,6 +1,6 @@
 {
   "name": "react-native-nielsen-nzme",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A react native brdige for Nielsen&#39;s SDK - Legacy API",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
