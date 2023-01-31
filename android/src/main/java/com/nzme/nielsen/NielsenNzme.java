@@ -447,4 +447,15 @@ public class NielsenNzme extends ReactContextBaseJavaModule implements IAppNotif
             Log.e(NIELSEN_TAG, "Exception in appInForeground " + ex.getMessage());
         }
     }
+
+    // Required for rn built in EventEmitter Calls.
+    @ReactMethod
+    public void addListener(String eventName) {
+
+    }
+
+    @ReactMethod
+    public void removeListeners(Integer count) {
+
+    }
 }
