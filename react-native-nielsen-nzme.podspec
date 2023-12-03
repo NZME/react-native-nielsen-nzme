@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
   s.frameworks = "UIKit", "Foundation", "AdSupport", "JavascriptCore", "WebKit", "SystemConfiguration", "Security", "AVFoundation"
 
   s.dependency "React"
-  s.dependency "NielsenAppSDK"
+  s.dependency "NielsenAppSDK", "9.0.0.0"
 end
