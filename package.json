@@ -36,14 +36,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simonso-nzme/react-native-nielsen-nzme.git"
+    "url": "git+https://github.com/NZME/react-native-nielsen-nzme.git"
   },
-  "author": "Simon So <simon.so@nzme.co.nz> (https://github.com/simonso-nzme)",
+  "author": "Simon So <simon.so@nzme.co.nz> (https://github.com/NZME)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simonso-nzme/react-native-nielsen-nzme/issues"
+    "url": "https://github.com/NZME/react-native-nielsen-nzme/issues"
   },
-  "homepage": "https://github.com/simonso-nzme/react-native-nielsen-nzme#readme",
+  "homepage": "https://github.com/NZME/react-native-nielsen-nzme#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.15.1",
