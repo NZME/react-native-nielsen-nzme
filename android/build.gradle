@@ -26,6 +26,7 @@ def getExtOrIntegerDefault(name) {
 }
 
 android {
+  namespace 'com.nzme.nielsen'
   compileSdkVersion getExtOrIntegerDefault('compileSdkVersion')
   buildToolsVersion getExtOrDefault('buildToolsVersion')
   defaultConfig {
